@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-
+import Countdown from "react-countdown";
 import "./styles.css";
+import Timer from "./Timer";
 
 export default function GameOne() {
 
@@ -15,9 +16,8 @@ export default function GameOne() {
 
   };
   return (
-    <div className="gameone">
-      <button onClick={incrementCount}>{count}</button>
-      <a className="timer">{count}</a>
+    <div className="gameone" onClick={incrementCount}>Нажимай!<br/>{count}
+      <a className="timer">{}</a>
     </div>
   );
 }

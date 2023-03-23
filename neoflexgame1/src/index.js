@@ -8,8 +8,12 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GameOne/>
+    <div className='wrapper'>
+   
     <Timer/>
+    <GameOne/>
+    
+    </div>
   </React.StrictMode>
 );
 
